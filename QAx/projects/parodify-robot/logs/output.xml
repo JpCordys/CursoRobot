@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-02T12:21:57.907550" rpa="false" schemaversion="5">
+<suite id="s1" name="Player" source="C:\QAx\projects\parodify-robot\player.robot">
+<test id="s1-t1" name="Deve tocar uma musica" line="5">
+<kw name="New Page" owner="Browser">
+<msg time="2024-05-02T12:22:11.520684" level="INFO">Successfully initialized new page object and opened url: https://parodify.vercel.app</msg>
+<msg time="2024-05-02T12:22:11.520684" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
+<arg>https://parodify.vercel.app</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-05-02T12:21:59.775449" elapsed="11.746236"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-05-02T12:22:12.279648" level="INFO">Text: 'Fernando Papito'</msg>
+<arg>css=.logged-user</arg>
+<arg>contains</arg>
+<arg>Fernando Papito</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-02T12:22:11.521685" elapsed="0.757963"/>
+</kw>
+<status status="PASS" start="2024-05-02T12:21:59.768454" elapsed="12.511194"/>
+</test>
+<status status="PASS" start="2024-05-02T12:21:57.923913" elapsed="14.440682"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Player">Player</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
